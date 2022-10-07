@@ -114,6 +114,227 @@
 
 // console.log(10 > 5);
 
-const isEqual = true === 1;
+// const isEqual = true === 1;
 
-console.log(isEqual);
+// console.log(isEqual);
+
+// console.log(Boolean(0));
+
+// console.log(5 && 6 && 8 && 'hghghghgh');
+
+// console.log(false || 0 || false || 9 || 0);
+
+// console.log(!false);
+
+// const x1 = 10;
+// const x2 = 30;
+// const number = 58;
+
+// console.log(`Число ${number} попадает в отрезок до ${x1}? `, number < x1);
+// console.log(`Число ${number} попадает в отрезок после ${x2}? `, number > x2);
+
+// const result = number < x1 || number > x2;
+// console.log(
+//   `Число ${number} попадает в отрезок до ${x1} или после ${x2}? `,
+//   result,
+// );
+
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
+
+// const canOpenChat = isOnline && isFriend && !isDnd;
+// console.log('Можно открыть чат? ', canOpenChat);
+
+// const sub = 'vip';
+
+// const canAccessContent = sub === 'pro' || sub === 'vip';
+// console.log('Есть доступ к контенту? ', canAccessContent);
+
+// if (5 > 30) {
+//   console.log('qweqwe');
+// }
+// console.log('123123');
+
+// if (5 > 30) {
+//   console.log('x > y');
+// } else {
+//   console.log('x < y');
+// }
+
+// const salary = 2500;
+
+// if (salary < 500) {
+//   console.log('Уровень 1');
+// } else if (salary > 50 && salary < 1500) {
+//   console.log('Уровень 2');
+// } else if (salary > 1500 && salary < 3000) {
+//   console.log('Уровень 3');
+// } else {
+//   console.log('Уровень 4');
+// }
+
+// const balance = 1000;
+// let message;
+
+// if (balance >= 0) {
+//   message = 'Позитивный баланс';
+// } else {
+//   message = 'Негативный баланс';
+// }
+
+// const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
+
+// console.log(message);
+
+// if (true) {
+//   const a = 5;
+//   console.log(a);
+// }
+
+// let balance = 10000;
+// const payment = 2000;
+
+// if (stars === 1) {
+//   price = 20;
+// } else if (stars === 2) {
+//   price = 30;
+// } else if (stars === 3) {
+//   price = 50;
+// } else if (stars === 4) {
+//   price = 70;
+// } else if (stars === 5) {
+//   price = 120;
+// } else {
+//   console.log('Такого количества звезд нет');
+// }
+
+// switch (stars) {
+//   case 1:
+//     price = 20;
+
+//   case 2:
+//     price = 30;
+//     break;
+
+//   case 3:
+//     price = 50;
+//     break;
+
+//   case 4:
+//     price = 70;
+//     break;
+
+//   case 5:
+//     price = 120;
+//     break;
+
+//   default:
+//     console.log('Такого количества звезд нет');
+// }
+
+// console.log(price);
+
+// if (stars === 1 || stars === 2) {
+//   price = 20;
+// } else if (stars === 3 || stars === 4) {
+//   price = 30;
+// } else if (stars === 5) {
+//   price = 120;
+// } else {
+//   console.log('Такого количества звезд нет');
+// }
+
+// const stars = 6;
+// let price;
+
+// switch (stars) {
+//   case 1:
+//   case 2:
+//     price = 20;
+//     break;
+
+//   case 3:
+//   case 4:
+//     price = 30;
+//     break;
+
+//   case 5:
+//     price = 120;
+//     break;
+
+//   default:
+//     console.log('Такого количества звезд нет');
+// }
+
+// console.log(price);
+
+// const option = 2;
+// let message = '';
+
+// switch (option) {
+//   case 1:
+//     message = 'Вы сможете забрать товар завтра в нашем офисе';
+//     break;
+
+//   case 2:
+//     message = 'Курьер доставит заказ завтра с 9.00';
+//     break;
+
+//   case 3:
+//     message = 'Посылка будет отправлена сегодня';
+//     break;
+
+//   default:
+//     message = 'Вам перезвонит менеджер';
+// }
+
+// console.log(message);
+
+// for (let i = 10; i <= 20; i += 3) {
+//   console.log(i);
+// }
+
+// console.log('qweqwe');
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// let a = 10;
+// const b = a++;
+
+// console.log(b);
+// console.log(a);
+
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const employees = 3;
+// let totalSalary = 0;
+
+// for (let i = 1; i <= employees; i += 1) {
+//   const salary = Math.round(
+//     Math.random() * (maxSalary - minSalary) + minSalary,
+//   );
+//   console.log(`ЗП работника номер ${i} - ${salary} `);
+
+//   totalSalary += salary;
+// }
+// console.log('totalSalary: ', totalSalary);
+
+const min = 0;
+const max = 5;
+let total = 0;
+
+for (let i = min; i <= max; i += 1) {
+  console.log(i);
+  if (i % 2 !== 0) {
+    console.log('Не четное: ', i);
+    continue;
+  }
+  console.log('Четное: ', i);
+
+  total += i;
+}
+
+console.log('total: ', total);
