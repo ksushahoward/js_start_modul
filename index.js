@@ -322,19 +322,70 @@
 // }
 // console.log('totalSalary: ', totalSalary);
 
-const min = 0;
-const max = 5;
-let total = 0;
+// const min = 0;
+// const max = 5;
+// let total = 0;
 
-for (let i = min; i <= max; i += 1) {
-  console.log(i);
-  if (i % 2 !== 0) {
-    console.log('Не четное: ', i);
-    continue;
-  }
-  console.log('Четное: ', i);
+// for (let i = min; i <= max; i += 1) {
+//   console.log(i);
+//   if (i % 2 !== 0) {
+//     console.log('Не четное: ', i);
+//     continue;
+//   }
+//   console.log('Четное: ', i);
 
-  total += i;
-}
+//   total += i;
+// }
 
-console.log('total: ', total);
+// console.log('total: ', total);
+
+// let balance = 10000;
+// const payment = 2000;
+
+// console.log(
+//   `Общая стоимость заказа ${payment} кредитов. Проверяем кол-во доступных средств на счету.`,
+// );
+
+// if (balance >= payment) {
+//   console.log('ok');
+
+//   balance -= payment;
+
+//   console.log(`На счету осталось ${balance} кредитов.`);
+// } else {
+//   console.log('На вашем счету недостаточно средств');
+// }
+
+// console.log('Операция заверщена');
+
+// let totalSpent = 200;
+// let payment = 50;
+// let discount = 0;
+
+// if (totalSpent >= 100 && totalSpent < 1000) {
+//   console.log('Бронзовый партнер, скидка 2%');
+//   discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//   console.log('Серебряный партнер, скидка 5%');
+//   discount = 0.05;
+// } else if (totalSpent >= 5000) {
+//   console.log('Золотой партнер, скидка 10%');
+//   discount = 0.1;
+// } else {
+//   console.log('Не партнер, скидка 0%');
+// }
+
+// payment -= payment * discount;
+// console.log(
+//   `Оформляем заказ на сумму ${payment} со скидкой ${discount * 100}%`,
+// );
+
+// totalSpent += payment;
+
+// console.log(`Общая сумма потраченного в магазине: ${totalSpent}`);
+// const btnAdd = document.querySelector('button[data-add]');
+// const valueInput = document.querySelector('input[data-value]');
+// btnAdd.addEventListener('click', function () {
+//   console.log('click heheheheh');
+//   console.log(valueInput.value);
+// });
